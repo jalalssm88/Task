@@ -42,7 +42,7 @@ const data = [
         image_url:'https://i.imgur.com/IFWqPoj.jpg'
     }
 ]
-app.get('/get_posts', (req, res)=>{
+app.get('/retrieve-img', (req, res)=>{
     res.status(200).json(data)
 })
 

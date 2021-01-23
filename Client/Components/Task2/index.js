@@ -6,7 +6,8 @@ export const TaskTwo = (props) => {
     const [posts, setPosts] = useState([])
     const getPosts = async ()=> {
         setLoading(true)
-        let response = await fetch('http://192.168.1.103:5000/get_posts')
+        //Replace the IP adress with yours
+        let response = await fetch('http://192.168.1.103:5000/retrieve-img')
         let parsed = response.json()
         parsed.then(res=>{
             setPosts(res)
